@@ -1,0 +1,24 @@
+@mixin button() {
+    display: flex;
+    padding-inline: 3.375rem;
+    padding-block: 1.125rem;
+    border-radius: 100rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: 300ms;
+}
+
+@mixin contact-icon-before() {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@mixin desktop() {
+    @media screen and (max-width: $desktop) {
+      @content;
+    }
+}

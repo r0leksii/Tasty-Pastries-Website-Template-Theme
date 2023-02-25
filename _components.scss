@@ -1,0 +1,9 @@
+@mixin button-primary() {
+    @include button;
+    background: $color-primary;
+    color: $color-white;
+
+    &:hover {
+        color: $color-white-hover;
+    }
+}
